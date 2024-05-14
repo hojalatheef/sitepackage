@@ -1,30 +1,63 @@
 {
-	"name": "jweiland/sitepackage",
-	"type": "typo3-cms-extension",
-	"description": "TYPO3 Sitepackage",
-	"homepage": "https://jweiland.net/",
-	"license": [
-		"GPL-2.0-or-later"
-	],
-	"keywords": [
-		"TYPO3 CMS"
-	],
-	"require": {
-		"typo3/cms-core": "^13.1",
-		"typo3/cms-rte-ckeditor": "^13.1",
-		"typo3/cms-fluid-styled-content": "^13.1"
-	},
-	"require-dev": {
-		"roave/security-advisories": "dev-latest"
-	},
-	"autoload": {
-		"psr-4": {
-			"Jweiland\\Sitepackage\\": "Classes/"
-		}
-	},
-	"extra": {
-		"typo3/cms": {
-			"extension-key": "sitepackage"
-		}
-	}
+  "name": "hojalatheef/sitepackage",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 Sitepackage",
+  "homepage": "https://jweiland.net/",
+  "support": {
+    "issues": "https://github.com/hojalatheef/sitepackage/issues",
+    "source": "https://github.com/hojalatheef/sitepackage"
+  },
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "TYPO3 CMS"
+  ],
+  "authors": [
+    {
+      "name": "Hoja Mustaffa Abdul Latheef",
+      "role": "Senior TYPO3 Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-backend": "^13.1 || dev-main",
+    "typo3/cms-core": "^13.1 || dev-main",
+    "typo3/cms-extbase": "^13.1 || dev-main",
+    "typo3/cms-fluid": "^13.1 || dev-main",
+    "typo3/cms-install": "^13.1",
+    "typo3/cms-rte-ckeditor": "^13.1",
+    "typo3/cms-fluid-styled-content": "^13.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "ergebnis/composer-normalize": "~2.42.0",
+    "friendsofphp/php-cs-fixer": "^3.52",
+    "phpstan/phpstan": "^1.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "HojaLatheef\\Sitepackage\\": "Classes/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true,
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    },
+    "bin-dir": ".Build/bin",
+    "sort-packages": true,
+    "vendor-dir": ".Build/vendor"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "sitepackage",
+      "web-dir": ".Build/web"
+    }
+  },
+  "scripts": {
+    "prepare-release": [
+      "rm -rf .github",
+      "rm .gitignore",
+      "rm .editorconfig"
+    ]
+  }
 }

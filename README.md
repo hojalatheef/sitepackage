@@ -1,4 +1,6 @@
 
+[![Latest Stable Version](https://poser.pugx.org/hojalatheef/sitepackage/v/stable.svg?style=for-the-badge)](https://github.com/hojalatheef/sitepackage)
+
 [![TYPO3](https://img.shields.io/badge/TYPO3-%F16822.svg?style=for-the-badge&logo=TYPO3&logoColor=white)](https://get.typo3.org/version/13)
 [![Total Downloads](https://poser.pugx.org/typo3/cms-core/d/total.svg?style=for-the-badge)](https://packagist.org/packages/typo3/cms-core)
 

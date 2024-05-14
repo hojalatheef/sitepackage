@@ -1,0 +1,7 @@
+.scaffold-topbar{
+  background: linear-gradient(90deg, rgba(90,130,15,1) 0%, rgba(9,121,19,1) 15%, rgba(145,7,120,1) 30%, rgba(165,154,6,1) 43%, rgba(198,4,4,1) 64%, rgba(2,228,216,1) 83%, rgba(255,0,11,1) 100%);
+}
+.topbar-header-site::before,
+.topbar-header-site::after {
+  background: unset;
+}

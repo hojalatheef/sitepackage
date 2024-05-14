@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'Jweiland\\Sitepackage\\' => 'Classes',
+            'HojaLatheef\\Sitepackage\\' => 'Classes',
         ],
     ],
     'state' => 'stable',
@@ -27,6 +27,6 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 1,
     'author' => 'Hoja Mustaffa Abdul Latheef',
     'author_email' => 'hlatheef@jweiland.net',
-    'author_company' => 'Jweiland.net',
+    'author_company' => 'Jweiland',
     'version' => '1.0.0',
 ];
