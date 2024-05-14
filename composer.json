@@ -1,0 +1,30 @@
+{
+	"name": "jweiland/sitepackage",
+	"type": "typo3-cms-extension",
+	"description": "TYPO3 Sitepackage",
+	"homepage": "https://jweiland.net/",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"keywords": [
+		"TYPO3 CMS"
+	],
+	"require": {
+		"typo3/cms-core": "^13.1",
+		"typo3/cms-rte-ckeditor": "^13.1",
+		"typo3/cms-fluid-styled-content": "^13.1"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-latest"
+	},
+	"autoload": {
+		"psr-4": {
+			"Jweiland\\Sitepackage\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "sitepackage"
+		}
+	}
+}
